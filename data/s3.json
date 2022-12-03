@@ -225,8 +225,8 @@
     "Upper Chest"
   ],
   "Pinnacle Rock": [
-    "Pinnacle Rock Lower Chest",
-    "Pinnacle Rock Upper Chest",
+    "Lower Chest",
+    "Upper Chest",
     "Seahorses"
   ],
   "Great Bay Temple": [
@@ -254,6 +254,13 @@
     "Day 1 Grave Tablet",
     "Ikana Graveyard Grotto",
     "Iron Knuckle Chest"
+  ],
+  "Secret Shrine": [
+    "Dinolfos Chest",
+    "Final Chest",
+    "Garo Master Chest",
+    "Wart Chest",
+    "Wizzrobe Chest"
   ],
   "Ikana Canyon": [
     "Scrub Trade",
@@ -301,12 +308,5 @@
     "Updraft Room Chest",
     "Wizzrobe",
     "Twinmold Heart Container"
-  ],
-  "Secret Shrine": [
-    "Dinolfos Chest",
-    "Final Chest",
-    "Garo Master Chest",
-    "Wart Chest",
-    "Wizzrobe Chest"
   ]
 }
