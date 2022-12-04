@@ -72,7 +72,7 @@ s {
 
 .card {
   background-color: #36393f;
-  padding: 16px;
+  padding: 0 16px 0 16px;
   border-radius: 10px;
   width: 90%;
   height: fit-content;
@@ -81,32 +81,38 @@ s {
 }
 
 #checksCount {
-  width: 105px;
+  width: 115px;
 }
 
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+  display: none;
 }
 
 input:checked + label {
-  color: gray;
+  color: #555;
   text-decoration: line-through;
 }
 
 li {
   display: flex;
   align-items: center;
-  padding: 3px;
+  padding: 5px;
 }
 
-li:hover {
+h2 {
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+h2:hover, li:hover {
   background-color: #40444b;
   border-radius: 10px;
 }
 
-label {
+.check-label {
   font-size: 18px;
   width: 90%;
 }
