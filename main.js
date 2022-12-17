@@ -76,16 +76,22 @@ const createTitleCheckbox = (areaName, areaChecks) => {
 const createWothButton = (areaName) => {
   const wothButton = document.createElement('button')
   wothButton.innerHTML = '☆'
+  if (localStorage.getItem(areaName + 'WOTH')) {
+    wothButton.innerHTML = '★'
+    wothButton.style = 'color: gold;'
+  }
   wothButton.className = 'woth-button'
   wothButton.onclick = () => {
     if (wothButton.innerHTML === '☆') {
       wothButton.innerHTML = '★'
       wothButton.style = 'color: gold;'
       document.getElementById(areaName).classList.add('woth')
+      localStorage.setItem(areaName + 'WOTH', true)
     } else {
       wothButton.innerHTML = '☆'
       wothButton.style = 'color: white;'
       document.getElementById(areaName).classList.remove('woth')
+      localStorage.removeItem(areaName + 'WOTH')
     }
   }
   return wothButton
@@ -118,6 +124,9 @@ fetch('data/s3.json')
       const card = document.createElement('div')
       card.id = areaName
       card.className = 'card'
+      if (localStorage.getItem(areaName + 'WOTH')) {
+        card.classList.add('woth')
+      }
       card.append(areaTitle, list)
 
       document.getElementById('masonry').append(card)
