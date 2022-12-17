@@ -1,10 +1,33 @@
 {
+  "Ocarina Song Locations": [
+    "Epona's Song - Romani's Game",
+    "Song of Storms - Day 1 Grave Tablet",
+    "Sonata of Awakening - Imprisoned Monkey",
+    "Goron Lullaby - Baby Goron",
+    "New Wave Bossa Nova - Baby Zoras",
+    "Elegy of Emptiness - Ikana King",
+    "Oath to Order - Boss Blue Warp"
+  ],
+  "Tingle's Maps": [
+    "Clocktown Map",
+    "Woodfall Map",
+    "Snowhead Map",
+    "Romani Ranch Map",
+    "Great Bay Map",
+    "Stone Tower Map"
+  ],
   "South Clock Town": [
     "Clock Tower Entrance",
     "Scrub Trade",
     "Postbox",
     "Final Day Chest",
     "Straw Roof Chest"
+  ],
+  "Laundry Pool": [
+    "Curiosity Shop Man #1",
+    "Curiosity Shop Man #2",
+    "Guru Guru",
+    "Kafei"
   ],
   "North Clock Town": [
     "Bombers' Hide and Seek",
@@ -49,29 +72,6 @@
     "Postman's Game",
     "Rosa Sisters",
     "Swordsman's School"
-  ],
-  "Laundry Pool": [
-    "Curiosity Shop Man #1",
-    "Curiosity Shop Man #2",
-    "Guru Guru",
-    "Kafei"
-  ],
-  "Ocarina Song Locations": [
-    "Epona's Song - Romani's Game",
-    "Song of Storms - Day 1 Grave Tablet",
-    "Sonata of Awakening - Imprisoned Monkey",
-    "Goron Lullaby - Baby Goron",
-    "New Wave Bossa Nova - Baby Zoras",
-    "Elegy of Emptiness - Ikana King",
-    "Oath to Order - Boss Blue Warp"
-  ],
-  "Tingle's Maps": [
-    "Clocktown Map",
-    "Woodfall Map",
-    "Snowhead Map",
-    "Romani Ranch Map",
-    "Great Bay Map",
-    "Stone Tower Map"
   ],
   "Termina Field": [
     "Astronomy Telescope",
