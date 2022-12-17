@@ -14,6 +14,14 @@ const onResetAll = () => {
     totalChecked = 0
     document.getElementById('numberChecked').innerHTML = 0
     document.getElementById('percentComplete').innerHTML = 0
+    Array.from(document.querySelectorAll('.woth'))
+      .forEach((el) => el.classList.remove('woth'));
+    Array.from(document.querySelectorAll('.woth-on'))
+      .forEach((el) => {
+        el.classList.remove('woth-on')
+        el.classList.add('woth-off')
+        el.innerHTML = '☆'
+      });
   }
 }
 
@@ -76,20 +84,23 @@ const createTitleCheckbox = (areaName, areaChecks) => {
 const createWothButton = (areaName) => {
   const wothButton = document.createElement('button')
   wothButton.innerHTML = '☆'
+  wothButton.className = 'woth-button woth-off'
   if (localStorage.getItem(areaName + 'WOTH')) {
+    wothButton.classList.remove('woth-off')
+    wothButton.classList.add('woth-on')
     wothButton.innerHTML = '★'
-    wothButton.style = 'color: gold;'
   }
-  wothButton.className = 'woth-button'
   wothButton.onclick = () => {
     if (wothButton.innerHTML === '☆') {
       wothButton.innerHTML = '★'
-      wothButton.style = 'color: gold;'
+      wothButton.classList.remove('woth-off')
+      wothButton.classList.add('woth-on')
       document.getElementById(areaName).classList.add('woth')
       localStorage.setItem(areaName + 'WOTH', true)
     } else {
       wothButton.innerHTML = '☆'
-      wothButton.style = 'color: white;'
+      wothButton.classList.remove('woth-on')
+      wothButton.classList.add('woth-off')
       document.getElementById(areaName).classList.remove('woth')
       localStorage.removeItem(areaName + 'WOTH')
     }
