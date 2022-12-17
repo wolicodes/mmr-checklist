@@ -50,7 +50,7 @@ const createLabel = (id, value) => {
 const createTitleCheckbox = (areaName, areaChecks) => {
   const input = document.createElement('input')
   input.setAttribute('type', 'checkbox')
-  input.id = areaName
+  input.id = areaName + 'Title'
   input.setAttribute('style', 'display: none;')
   if (localStorage.getItem(areaName)) {
     input.checked = true
@@ -73,6 +73,24 @@ const createTitleCheckbox = (areaName, areaChecks) => {
   return input
 }
 
+const createWothButton = (areaName) => {
+  const wothButton = document.createElement('button')
+  wothButton.innerHTML = '☆'
+  wothButton.className = 'woth-button'
+  wothButton.onclick = () => {
+    if (wothButton.innerHTML === '☆') {
+      wothButton.innerHTML = '★'
+      wothButton.style = 'color: gold;'
+      document.getElementById(areaName).classList.add('woth')
+    } else {
+      wothButton.innerHTML = '☆'
+      wothButton.style = 'color: white;'
+      document.getElementById(areaName).classList.remove('woth')
+    }
+  }
+  return wothButton
+}
+
 fetch('data/s3.json')
   .then(response => response.json())
   .then(fullChecklist => {
@@ -93,10 +111,12 @@ fetch('data/s3.json')
       })
 
       const areaTitle = document.createElement('h2')
-      areaTitle.innerHTML = `<label for="${areaName}">${areaName}</label>`
+      areaTitle.innerHTML = `<label for="${areaName}Title">${areaName}</label>`
       areaTitle.prepend(createTitleCheckbox(areaName, areaChecks))
+      areaTitle.append(createWothButton(areaName))
 
       const card = document.createElement('div')
+      card.id = areaName
       card.className = 'card'
       card.append(areaTitle, list)
 
