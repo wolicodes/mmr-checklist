@@ -37,10 +37,10 @@ button:hover {
 #reset-all {
   background-color: #1a1a1a;
   margin-bottom: 10px;
-  -webkit-transition : border 200ms ease-out;
-  -moz-transition : border 200ms ease-out;
-  -o-transition : border 200ms ease-out;
-  transition : border 200ms ease-out;
+  -webkit-transition: border 200ms ease-out;
+  -moz-transition: border 200ms ease-out;
+  -o-transition: border 200ms ease-out;
+  transition: border 200ms ease-out;
 }
 
 #reset-all:hover {
@@ -93,7 +93,11 @@ input[type="checkbox"] {
   display: none;
 }
 
-input:checked + label {
+input:checked + input {
+  display: none;
+}
+
+input:checked + input + label {
   opacity: 0.2;
   text-decoration: line-through;
 }
@@ -140,4 +144,16 @@ h2:hover, li:hover {
 
 .woth-off {
   color: white;
+}
+
+.item-input {
+  width: 25px;
+  height: 20px;
+  margin-right: 6px;
+  border-radius: 5px;
+  border: none;
+}
+
+.item-input:focus {
+  outline: none;
 }

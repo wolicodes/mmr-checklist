@@ -47,8 +47,23 @@ const createCheckbox = (id, checkName) => {
     updateCheckedCount(1)
     input.checked = true
   }
-  input.onchange = () => { onCheck(input) }
+  input.onchange = () => {
+    onCheck(input)
+  }
   return input
+}
+
+const createItemInput = (id, checkName) => {
+  const itemBox = document.createElement('input')
+  itemBox.setAttribute('type', 'text')
+  itemBox.setAttribute('maxlength', '3')
+  itemBox.dataset.line = id
+  itemBox.className = 'item-input'
+  itemBox.onkeyup = (e) => {
+    if (e.target.value.length === 3) {
+    }
+  }
+  return itemBox
 }
 
 const createLabel = (id, checkName) => {
@@ -127,21 +142,23 @@ Promise.all([fetch('data/s3.json'), fetch('data/area-styles.json')])
     const fullChecklist = data[0]
     const styles = data[1]
     console.log(Object.values(fullChecklist).flat())
-    console.log([... new Set(Object.values(fullChecklist).flat())])
-    totalChecks = [... new Set(Object.values(fullChecklist).flat())].length
+    console.log([...new Set(Object.values(fullChecklist).flat())])
+    totalChecks = [...new Set(Object.values(fullChecklist).flat())].length
     document.getElementById('totalChecks').textContent = totalChecks.toString()
 
     Object.keys(fullChecklist).forEach((areaName) => {
       const areaChecks = fullChecklist[areaName]
       const list = document.createElement('ul')
 
+      // Create each individual check line for the given card
       areaChecks.forEach(checkName => {
         const id = areaName + ' ' + checkName
-        const line = document.createElement('li')
+        const checkLine = document.createElement('li')
         const checkbox = createCheckbox(id, checkName)
+        const itemInput = createItemInput(id, checkName)
         const label = createLabel(id, checkName)
-        line.append(checkbox, label)
-        list.append(line)
+        checkLine.append(checkbox, itemInput, label)
+        list.append(checkLine)
       })
 
       const areaTitle = createAreaTitle(areaName, areaChecks, styles[areaName]['emoji'])
