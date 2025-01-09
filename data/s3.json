@@ -56,6 +56,15 @@
     "Guru Guru",
     "Kafei"
   ],
+  "Ocarina Song Locations": [
+    "Epona's Song - Romani's Game",
+    "Song of Storms - Day 1 Grave Tablet",
+    "Sonata of Awakening - Imprisoned Monkey",
+    "Goron Lullaby - Baby Goron",
+    "New Wave Bossa Nova - Baby Zoras",
+    "Elegy of Emptiness - Ikana King",
+    "Oath to Order - Boss Blue Warp"
+  ],
   "Tingle's Maps": [
     "Clocktown Map",
     "Woodfall Map",
@@ -88,8 +97,7 @@
     "Cremia",
     "Dog Race",
     "Doggy Racetrack Roof Chest",
-    "Grog",
-    "Romani's Game"
+    "Grog"
   ],
   "Road to Southern Swamp": [
     "Grotto",
@@ -112,8 +120,7 @@
     "Bean Grotto",
     "Bean Man",
     "Butler",
-    "West Garden",
-    "Imprisoned Monkey"
+    "West Garden"
   ],
   "Woodfall": [
     "Behind Woodfall Owl Chest",
@@ -147,7 +154,6 @@
     "Underwater Ramp Chest"
   ],
   "Goron Village": [
-    "Baby Goron",
     "Biggest Bomb Bag Purchase",
     "Goron Shop 10 Arrows",
     "Goron Shop 10 Bombs",
@@ -180,7 +186,6 @@
     "Goht Heart Container"
   ],
   "Great Bay Coast": [
-    "Baby Zoras",
     "Fisherman Game",
     "Grotto",
     "Ledge",
@@ -251,7 +256,6 @@
     "Captain Keeta's Chest",
     "Dampe Digging",
     "Day 1 Grave Bats",
-    "Day 1 Grave Tablet",
     "Ikana Graveyard Grotto",
     "Iron Knuckle Chest"
   ],
@@ -275,8 +279,7 @@
     "Mirror Shield Chest"
   ],
   "Ikana Castle": [
-    "Ikana Castle Pillar",
-    "Ikana King"
+    "Ikana Castle Pillar"
   ],
   "Inverted Stone Tower": [
     "Left Chest",
