@@ -133,3 +133,11 @@ h2:hover, li:hover {
 .woth {
   border: 2px solid gold;
 }
+
+.woth-on {
+  color: gold;
+}
+
+.woth-off {
+  color: white;
+}
