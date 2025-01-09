@@ -99,7 +99,7 @@ input:checked + label {
 li {
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 5px 10px 5px 10px;
 }
 
 h2 {
