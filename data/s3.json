@@ -1,14 +1,14 @@
 {
-  "Ocarina Song Locations": [
-    "Epona's Song - Romani's Game",
-    "Song of Storms - Day 1 Grave Tablet",
-    "Sonata of Awakening - Imprisoned Monkey",
-    "Goron Lullaby - Baby Goron",
-    "New Wave Bossa Nova - Baby Zoras",
-    "Elegy of Emptiness - Ikana King",
-    "Oath to Order - Boss Blue Warp"
+  "🎵 Songs": [
+    "Romani's Game",
+    "Day 1 Grave Tablet",
+    "Imprisoned Monkey",
+    "Baby Goron",
+    "Baby Zoras",
+    "Ikana King",
+    "Boss Blue Warp"
   ],
-  "Tingle's Maps": [
+  "🗺️ Tingle's Maps": [
     "Clocktown Map",
     "Woodfall Map",
     "Snowhead Map",
@@ -16,20 +16,14 @@
     "Great Bay Map",
     "Stone Tower Map"
   ],
-  "South Clock Town": [
+  "🟢 South Clock Town": [
     "Clock Tower Entrance",
     "Scrub Trade",
     "Postbox",
     "Final Day Chest",
     "Straw Roof Chest"
   ],
-  "Laundry Pool": [
-    "Curiosity Shop Man #1",
-    "Curiosity Shop Man #2",
-    "Guru Guru",
-    "Kafei"
-  ],
-  "North Clock Town": [
+  "🔴 North Clock Town": [
     "Bombers' Hide and Seek",
     "Deku Playground Any Day",
     "Keaton Quiz",
@@ -38,7 +32,7 @@
     "Great Fairy",
     "Great Fairy Non-Human"
   ],
-  "East Clock Town": [
+  "🟠 East Clock Town": [
     "Bombers' Hideout Chest",
     "East Clock Town Chest",
     "Gorman",
@@ -52,17 +46,7 @@
     "Town Archery #1",
     "Treasure Chest Game Goron"
   ],
-  "Stock Pot Inn": [
-    "Anju and Kafei",
-    "Grandma Long Story",
-    "Grandma Short Story",
-    "Inn Guest Room Chest",
-    "Inn Reservation",
-    "Inn Staff Room Chest",
-    "Midnight Meeting",
-    "Toilet Hand"
-  ],
-  "West Clock Town": [
+  "🔵 West Clock Town": [
     "All-Night Mask Purchase",
     "Bank Reward (200 Rupee)",
     "Bank Reward (500 Rupee)",
@@ -73,7 +57,23 @@
     "Rosa Sisters",
     "Swordsman's School"
   ],
-  "Termina Field": [
+  "🧺 Laundry Pool": [
+    "Curiosity Shop Man #1",
+    "Curiosity Shop Man #2",
+    "Guru Guru",
+    "Kafei"
+  ],
+  "🛏️ Stock Pot Inn": [
+    "Anju and Kafei",
+    "Grandma Long Story",
+    "Grandma Short Story",
+    "Inn Guest Room Chest",
+    "Inn Reservation",
+    "Inn Staff Room Chest",
+    "Midnight Meeting",
+    "Toilet Hand"
+  ],
+  "🌾 Termina Field": [
     "Astronomy Telescope",
     "Bio Baba Grotto",
     "Business Scrub Purchase",
@@ -87,24 +87,24 @@
     "Stump Chest",
     "Underwater Chest"
   ],
-  "Milk Road": [
+  "🥛 Milk Road": [
     "Gorman Bros Milk Purchase",
     "Gorman Bros Race",
     "Keaton Quiz"
   ],
-  "Romani Ranch": [
+  "🐄 Romani Ranch": [
     "Aliens Defense",
     "Cremia",
     "Dog Race",
     "Doggy Racetrack Roof Chest",
     "Grog"
   ],
-  "Road to Southern Swamp": [
+  "🍃 Road to Southern Swamp": [
     "Grotto",
     "Tree",
     "Swamp Archery #1"
   ],
-  "Southern Swamp": [
+  "🛶 Southern Swamp": [
     "Biggest Bomb Bag Purchase",
     "Boat Archery",
     "Kotake",
@@ -116,18 +116,18 @@
     "Spider House Reward",
     "Tourist Center Roof"
   ],
-  "Deku Palace": [
+  "🐒 Deku Palace": [
     "Bean Grotto",
     "Bean Man",
     "Butler",
     "West Garden"
   ],
-  "Woodfall": [
+  "🍁 Woodfall": [
     "Behind Woodfall Owl Chest",
     "Entrance to Woodfall Chest",
     "Woodfall Bridge Chest"
   ],
-  "Woodfall Temple": [
+  "🍁 Woodfall Temple": [
     "Entrance Platform",
     "Small Key Chest",
     "Map Chest",
@@ -137,7 +137,7 @@
     "Compass Chest",
     "Odolwa Heart Container"
   ],
-  "Mountain Village": [
+  "🏔️ Mountain Village": [
     "Darmani",
     "Hungry Goron",
     "Keaton Quiz",
@@ -146,14 +146,14 @@
     "Spring Grotto",
     "Waterfall Chest"
   ],
-  "Twin Islands": [
+  "🐺 Twin Islands": [
     "Goron Race",
     "Goron Racetrack Grotto",
     "Hot Spring Water Grotto",
     "Cave Chest",
     "Underwater Ramp Chest"
   ],
-  "Goron Village": [
+  "🍖 Goron Village": [
     "Biggest Bomb Bag Purchase",
     "Goron Shop 10 Arrows",
     "Goron Shop 10 Bombs",
@@ -165,11 +165,11 @@
     "Mountain Scrub Trade",
     "Powder Keg Challenge"
   ],
-  "Path to Snowhead": [
+  "🧊 Path to Snowhead": [
     "Grotto",
     "Pillar"
   ],
-  "Snowhead Temple": [
+  "🧊 Snowhead Temple": [
     "Bridge Room Chest",
     "Pillar Freezards",
     "Twin Block",
@@ -185,7 +185,7 @@
     "Basement",
     "Goht Heart Container"
   ],
-  "Great Bay Coast": [
+  "🏖️ Great Bay Coast": [
     "Fisherman Game",
     "Grotto",
     "Ledge",
@@ -194,7 +194,7 @@
     "Spider House Chest",
     "Spider House Day 1 Reward"
   ],
-  "Zora Cape": [
+  "🌊 Zora Cape": [
     "Beaver Race #1",
     "Grotto",
     "Ledge With Tree Chest",
@@ -202,7 +202,7 @@
     "Like-Like",
     "Underwater Chest"
   ],
-  "Zora Hall": [
+  "🎤 Zora Hall": [
     "Evan",
     "Lulu's Room Ledge",
     "Ocean Scrub Trade",
@@ -211,30 +211,30 @@
     "Zora Shop Hero's Shield",
     "Zora Shop Red Potion"
   ],
-  "Pirates' Fortress Exterior": [
+  "🏴‍☠️ Pirates' Fortress Exterior": [
     "Corner Chest",
     "Log Chest",
     "Sand Chest"
   ],
-  "Pirates' Fortress Sewer": [
+  "🚾 Pirates' Fortress Sewer": [
     "Cage",
     "Cage Room Deep Chest",
     "Cage Room Shallow Chest",
     "Maze Chest"
   ],
-  "Pirates' Fortress Interior": [
+  "🐝 Pirates' Fortress Interior": [
     "Hookshot Chest",
     "Guard Room Chest",
     "Lower Chest",
     "Tank Chest",
     "Upper Chest"
   ],
-  "Pinnacle Rock": [
+  "🌫️ Pinnacle Rock": [
     "Lower Chest",
     "Upper Chest",
     "Seahorses"
   ],
-  "Great Bay Temple": [
+  "⚙️ Great Bay Temple": [
     "Entrance Torches",
     "Bio Babas",
     "Compass Chest",
@@ -247,46 +247,46 @@
     "Ice Arrow Chest",
     "Gyorg Heart Container"
   ],
-  "Road to Ikana": [
+  "🐱‍👤 Road to Ikana": [
     "Pillar Chest",
     "Grotto",
     "Invisible Soldier"
   ],
-  "Ikana Graveyard": [
+  "🪦 Ikana Graveyard": [
     "Captain Keeta's Chest",
     "Dampe Digging",
     "Day 1 Grave Bats",
     "Ikana Graveyard Grotto",
     "Iron Knuckle Chest"
   ],
-  "Secret Shrine": [
+  "⚔️ Secret Shrine": [
     "Dinolfos Chest",
     "Final Chest",
     "Garo Master Chest",
     "Wart Chest",
     "Wizzrobe Chest"
   ],
-  "Ikana Canyon": [
+  "🎡 Ikana Canyon": [
     "Scrub Trade",
     "Ledge",
     "Pamela's Father",
     "Poe Hut",
     "Secret Shrine Grotto"
   ],
-  "Beneath the Well": [
+  "🧟 Beneath the Well": [
     "Well Left Path Chest",
     "Well Right Path Chest",
     "Mirror Shield Chest"
   ],
-  "Ikana Castle": [
+  "🏯 Ikana Castle": [
     "Ikana Castle Pillar"
   ],
-  "Inverted Stone Tower": [
+  "🧗 Inverted Stone Tower": [
     "Left Chest",
     "Middle Chest",
     "Right Chest"
   ],
-  "Stone Tower Temple": [
+  "🧗 Stone Tower Temple": [
     "Giant's Mask Chest",
     "Light Arrow Chest",
     "Armos Room Chest",
