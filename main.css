@@ -28,6 +28,13 @@ button {
   font-weight: 500;
   font-family: inherit;
   color: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#reset-all {
   background-color: #1a1a1a;
   margin-bottom: 10px;
   -webkit-transition : border 200ms ease-out;
@@ -36,8 +43,7 @@ button {
   transition : border 200ms ease-out;
 }
 
-button:hover {
-  cursor: pointer;
+#reset-all:hover {
   border: 1px solid white;
 }
 
@@ -84,8 +90,9 @@ input[type="checkbox"] {
   margin-right: 10px;
 }
 
-input[type="checkbox"]:checked {
-  background-color: red;
+input:checked + label {
+  color: gray;
+  text-decoration: line-through;
 }
 
 li {
