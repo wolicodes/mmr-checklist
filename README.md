@@ -1,6 +1,6 @@
 # MMR Checklist
 
-Checklist of items for Majora's Mask Randomizer. Saves progress in localStorage.
+Checklist of items for Majora's Mask Randomizer, no library nor framework. Saves progress in localStorage.
 
 Only supports S3 settings for now (might change in the future).
 
