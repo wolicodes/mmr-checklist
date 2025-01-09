@@ -72,12 +72,14 @@ s {
 
 .card {
   background-color: #36393f;
+  border: 2px solid #36393f;
   padding: 0 16px 0 16px;
   border-radius: 10px;
   width: 90%;
   height: fit-content;
   margin: 0 1rem 1rem 0;
   display: inline-block;
+  position: relative;
 }
 
 #checksCount {
@@ -115,4 +117,19 @@ h2:hover, li:hover {
 .check-label {
   font-size: 18px;
   width: 90%;
+}
+
+.woth-button {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  color: white;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+
+.woth {
+  border: 2px solid gold;
 }
