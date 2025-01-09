@@ -33,7 +33,7 @@ const createCheckbox = (id) => {
   input.id = id
   if (localStorage.getItem(id)) {
     updateCheckedCount(1)
-    input.setAttribute('checked', totalChecked)
+    input.checked = true
   }
   input.onchange = () => { onCheck(input) }
   return input
@@ -42,8 +42,35 @@ const createCheckbox = (id) => {
 const createLabel = (id, value) => {
   const label = document.createElement('label')
   label.setAttribute('for', id)
+  label.className = 'check-label'
   label.innerHTML = value
   return label
+}
+
+const createTitleCheckbox = (areaName, areaChecks) => {
+  const input = document.createElement('input')
+  input.setAttribute('type', 'checkbox')
+  input.id = areaName
+  input.setAttribute('style', 'display: none;')
+  if (localStorage.getItem(areaName)) {
+    input.checked = true
+  }
+  input.onchange = () => {
+    if (input.checked) {
+      localStorage.setItem(areaName, true)
+    } else {
+      localStorage.removeItem(areaName)
+    }
+    areaChecks.forEach(check => {
+      const childCheckbox = document.getElementById(areaName + ' ' + check)
+      if (input.checked && childCheckbox.checked) {
+        return
+      }
+      childCheckbox.checked = input.checked
+      onCheck(childCheckbox)
+    })
+  }
+  return input
 }
 
 fetch('data/s3.json')
@@ -53,9 +80,10 @@ fetch('data/s3.json')
     document.getElementById('totalChecks').innerHTML = totalChecks
 
     Object.keys(fullChecklist).forEach((areaName) => {
+      const areaChecks = fullChecklist[areaName]
       const list = document.createElement('ul')
 
-      fullChecklist[areaName].forEach(checkName => {
+      areaChecks.forEach(checkName => {
         const id = areaName + ' ' + checkName
         const line = document.createElement('li')
         const checkbox = createCheckbox(id)
@@ -65,7 +93,8 @@ fetch('data/s3.json')
       })
 
       const areaTitle = document.createElement('h2')
-      areaTitle.innerHTML = areaName
+      areaTitle.innerHTML = `<label for="${areaName}">${areaName}</label>`
+      areaTitle.prepend(createTitleCheckbox(areaName, areaChecks))
 
       const card = document.createElement('div')
       card.className = 'card'
