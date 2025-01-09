@@ -92,7 +92,7 @@ input[type="checkbox"] {
 }
 
 input:checked + label {
-  color: #555;
+  opacity: 0.2;
   text-decoration: line-through;
 }
 
