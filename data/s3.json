@@ -1,0 +1,312 @@
+{
+  "South Clock Town": [
+    "Clock Tower Entrance",
+    "Scrub Trade",
+    "Postbox",
+    "Final Day Chest",
+    "Straw Roof Chest"
+  ],
+  "North Clock Town": [
+    "Bombers' Hide and Seek",
+    "Deku Playground Any Day",
+    "Keaton Quiz",
+    "Tree",
+    "Old Lady",
+    "Great Fairy",
+    "Great Fairy Non-Human"
+  ],
+  "East Clock Town": [
+    "Bombers' Hideout Chest",
+    "East Clock Town Chest",
+    "Gorman",
+    "Honey and Darling Any Day",
+    "Madame Aroma in Bar",
+    "Madame Aroma in Office",
+    "Mayor",
+    "Milk Bar Chateau",
+    "Milk Bar Milk",
+    "Postman's Freedom Reward",
+    "Town Archery #1",
+    "Treasure Chest Game Goron"
+  ],
+  "Stock Pot Inn": [
+    "Anju and Kafei",
+    "Grandma Long Story",
+    "Grandma Short Story",
+    "Inn Guest Room Chest",
+    "Inn Reservation",
+    "Inn Staff Room Chest",
+    "Midnight Meeting",
+    "Toilet Hand"
+  ],
+  "West Clock Town": [
+    "All-Night Mask Purchase",
+    "Bank Reward (200 Rupee)",
+    "Bank Reward (500 Rupee)",
+    "Bank Reward (1000 Rupee)",
+    "Big Bomb Bag Purchase",
+    "Bomb Bag Purchase",
+    "Postman's Game",
+    "Rosa Sisters",
+    "Swordsman's School"
+  ],
+  "Laundry Pool": [
+    "Curiosity Shop Man #1",
+    "Curiosity Shop Man #2",
+    "Guru Guru",
+    "Kafei"
+  ],
+  "Tingle's Maps": [
+    "Clocktown Map",
+    "Woodfall Map",
+    "Snowhead Map",
+    "Romani Ranch Map",
+    "Great Bay Map",
+    "Stone Tower Map"
+  ],
+  "Termina Field": [
+    "Astronomy Telescope",
+    "Bio Baba Grotto",
+    "Business Scrub Purchase",
+    "Dodongo Grotto",
+    "Gossip Stones",
+    "Kamaro",
+    "Peahat Grotto",
+    "Grass Chest",
+    "Grass Grotto",
+    "Pillar Grotto",
+    "Stump Chest",
+    "Underwater Chest"
+  ],
+  "Milk Road": [
+    "Gorman Bros Milk Purchase",
+    "Gorman Bros Race",
+    "Keaton Quiz"
+  ],
+  "Romani Ranch": [
+    "Aliens Defense",
+    "Cremia",
+    "Dog Race",
+    "Doggy Racetrack Roof Chest",
+    "Grog",
+    "Romani's Game"
+  ],
+  "Road to Southern Swamp": [
+    "Grotto",
+    "Tree",
+    "Swamp Archery #1"
+  ],
+  "Southern Swamp": [
+    "Biggest Bomb Bag Purchase",
+    "Boat Archery",
+    "Kotake",
+    "Koume",
+    "Mystery Woods Grotto",
+    "Near Swamp Spider House Grotto",
+    "Pictograph Contest Winner",
+    "Scrub Trade",
+    "Spider House Reward",
+    "Tourist Center Roof"
+  ],
+  "Deku Palace": [
+    "Bean Grotto",
+    "Bean Man",
+    "Butler",
+    "West Garden",
+    "Imprisoned Monkey"
+  ],
+  "Woodfall": [
+    "Behind Woodfall Owl Chest",
+    "Entrance to Woodfall Chest",
+    "Woodfall Bridge Chest"
+  ],
+  "Woodfall Temple": [
+    "Entrance Platform",
+    "Small Key Chest",
+    "Map Chest",
+    "Hero's Bow Chest",
+    "Main Room Switch",
+    "Dark Room",
+    "Compass Chest",
+    "Odolwa Heart Container"
+  ],
+  "Mountain Village": [
+    "Darmani",
+    "Hungry Goron",
+    "Keaton Quiz",
+    "Smithy Day 1",
+    "Smithy Day 2",
+    "Spring Grotto",
+    "Waterfall Chest"
+  ],
+  "Twin Islands": [
+    "Goron Race",
+    "Goron Racetrack Grotto",
+    "Hot Spring Water Grotto",
+    "Cave Chest",
+    "Underwater Ramp Chest"
+  ],
+  "Goron Village": [
+    "Baby Goron",
+    "Biggest Bomb Bag Purchase",
+    "Goron Shop 10 Arrows",
+    "Goron Shop 10 Bombs",
+    "Goron Shop Red Potion",
+    "Goron Village Ledge",
+    "Lens Cave Invisible Chest",
+    "Lens Cave Rock Chest",
+    "Lens of Truth Chest",
+    "Mountain Scrub Trade",
+    "Powder Keg Challenge"
+  ],
+  "Path to Snowhead": [
+    "Grotto",
+    "Pillar"
+  ],
+  "Snowhead Temple": [
+    "Bridge Room Chest",
+    "Pillar Freezards",
+    "Twin Block",
+    "Block Room Chest",
+    "Compass Chest",
+    "Ice Puzzle",
+    "Icicle Room Chest",
+    "Icicle Room Wall",
+    "Map Chest",
+    "Map Room Ledge",
+    "Fire Arrow Chest",
+    "Main Room Wall",
+    "Basement",
+    "Goht Heart Container"
+  ],
+  "Great Bay Coast": [
+    "Baby Zoras",
+    "Fisherman Game",
+    "Grotto",
+    "Ledge",
+    "Lab Fish",
+    "Mikau",
+    "Spider House Chest",
+    "Spider House Day 1 Reward"
+  ],
+  "Zora Cape": [
+    "Beaver Race #1",
+    "Grotto",
+    "Ledge With Tree Chest",
+    "Ledge Without Tree Chest",
+    "Like-Like",
+    "Underwater Chest"
+  ],
+  "Zora Hall": [
+    "Evan",
+    "Lulu's Room Ledge",
+    "Ocean Scrub Trade",
+    "Stage Lights",
+    "Zora Shop 10 Arrows",
+    "Zora Shop Hero's Shield",
+    "Zora Shop Red Potion"
+  ],
+  "Pirates' Fortress Exterior": [
+    "Corner Chest",
+    "Log Chest",
+    "Sand Chest"
+  ],
+  "Pirates' Fortress Sewer": [
+    "Cage",
+    "Cage Room Deep Chest",
+    "Cage Room Shallow Chest",
+    "Maze Chest"
+  ],
+  "Pirates' Fortress Interior": [
+    "Hookshot Chest",
+    "Guard Room Chest",
+    "Lower Chest",
+    "Tank Chest",
+    "Upper Chest"
+  ],
+  "Pinnacle Rock": [
+    "Pinnacle Rock Lower Chest",
+    "Pinnacle Rock Upper Chest",
+    "Seahorses"
+  ],
+  "Great Bay Temple": [
+    "Entrance Torches",
+    "Bio Babas",
+    "Compass Chest",
+    "Green Valve",
+    "Map Chest",
+    "Seesaw Room",
+    "Small Key Chest",
+    "Waterwheel Room Lower",
+    "Waterwheel Room Upper",
+    "Ice Arrow Chest",
+    "Gyorg Heart Container"
+  ],
+  "Road to Ikana": [
+    "Pillar Chest",
+    "Grotto",
+    "Invisible Soldier"
+  ],
+  "Ikana Graveyard": [
+    "Captain Keeta's Chest",
+    "Dampe Digging",
+    "Day 1 Grave Bats",
+    "Day 1 Grave Tablet",
+    "Ikana Graveyard Grotto",
+    "Iron Knuckle Chest"
+  ],
+  "Ikana Canyon": [
+    "Scrub Trade",
+    "Ledge",
+    "Pamela's Father",
+    "Poe Hut",
+    "Secret Shrine Grotto"
+  ],
+  "Beneath the Well": [
+    "Well Left Path Chest",
+    "Well Right Path Chest",
+    "Mirror Shield Chest"
+  ],
+  "Ikana Castle": [
+    "Ikana Castle Pillar",
+    "Ikana King"
+  ],
+  "Inverted Stone Tower": [
+    "Left Chest",
+    "Middle Chest",
+    "Right Chest"
+  ],
+  "Stone Tower Temple": [
+    "Giant's Mask Chest",
+    "Light Arrow Chest",
+    "Armos Room Chest",
+    "Basement Ledge",
+    "Bridge Crystal",
+    "Compass Chest",
+    "Death Armos",
+    "Death Armos Maze Chest",
+    "Entrance Sun Switch",
+    "Eyegore",
+    "Eyegore Room Chest",
+    "Lava Room Fire Ring",
+    "Lava Room Ledge",
+    "Map Chest",
+    "Mirror Sun Block",
+    "Mirror Sun Switch",
+    "Statue Eye",
+    "Thin Bridge",
+    "Underwater",
+    "Updraft Fire Ring",
+    "Updraft Frozen Eye",
+    "Updraft Room Chest",
+    "Wizzrobe",
+    "Twinmold Heart Container"
+  ],
+  "Secret Shrine": [
+    "Dinolfos Chest",
+    "Final Chest",
+    "Garo Master Chest",
+    "Wart Chest",
+    "Wizzrobe Chest"
+  ]
+}
