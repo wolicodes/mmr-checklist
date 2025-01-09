@@ -4,4 +4,4 @@ Checklist of items for Majora's Mask Randomizer, no library nor framework. Saves
 
 Only supports S3 settings for now (might change in the future).
 
-Visit at https://wburgos.github.io/mmr-checklist/
+Visit at https://wolicodes.github.io/mmr-checklist/
