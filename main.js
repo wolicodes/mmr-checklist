@@ -10,7 +10,10 @@ const updateCheckedCount = (direction) => {
 const onResetAll = () => {
   if (window.confirm('Are you sure?')) {
     localStorage.clear()
-    document.querySelectorAll('input[type=checkbox]').forEach(el => el.checked = false);
+    document.querySelectorAll('input[type=checkbox]').forEach(el => el.checked = false)
+    totalChecked = 0
+    document.getElementById('numberChecked').innerHTML = 0
+    document.getElementById('percentComplete').innerHTML = 0
   }
 }
 
