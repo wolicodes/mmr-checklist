@@ -37,10 +37,10 @@ button:hover {
 #reset-all {
   background-color: #1a1a1a;
   margin-bottom: 10px;
-  -webkit-transition : border 200ms ease-out;
-  -moz-transition : border 200ms ease-out;
-  -o-transition : border 200ms ease-out;
-  transition : border 200ms ease-out;
+  -webkit-transition: border 200ms ease-out;
+  -moz-transition: border 200ms ease-out;
+  -o-transition: border 200ms ease-out;
+  transition: border 200ms ease-out;
 }
 
 #reset-all:hover {
@@ -52,7 +52,8 @@ ul {
   padding: 0;
 }
 
-label:hover, input[type='checkbox']:hover {
+label:hover,
+input[type='checkbox']:hover {
   cursor: pointer;
 }
 
@@ -86,7 +87,7 @@ s {
   width: 115px;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -109,7 +110,8 @@ h2 {
   margin-bottom: 0;
 }
 
-h2:hover, li:hover {
+h2:hover,
+li:hover {
   background-color: #40444b;
   border-radius: 10px;
 }
