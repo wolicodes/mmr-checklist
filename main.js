@@ -14,8 +14,8 @@ const onResetAll = () => {
     totalChecked = 0;
     document.getElementById('numberChecked').textContent = '0';
     document.getElementById('percentComplete').textContent = '0';
-    Array.from(document.querySelectorAll('.woth')).forEach((el) => el.classList.remove('woth'));
-    Array.from(document.querySelectorAll('.woth-on')).forEach((el) => {
+    document.querySelectorAll('.woth').forEach((el) => el.classList.remove('woth'));
+    document.querySelectorAll('.woth-on').forEach((el) => {
       el.classList.remove('woth-on');
       el.classList.add('woth-off');
       el.textContent = '☆';
@@ -24,24 +24,36 @@ const onResetAll = () => {
 };
 
 const onCheck = (elem) => {
+  const checkName = elem.dataset.checkName;
+  const areaName = elem.dataset.areaName;
   if (elem.checked) {
-    localStorage.setItem(elem.id, elem.checked);
+    localStorage.setItem(checkName, elem.checked);
     updateCheckedCount(1);
   } else {
-    localStorage.removeItem(elem.id);
+    localStorage.removeItem(checkName);
     updateCheckedCount(-1);
   }
-  document.querySelectorAll(`[data-check-name="${elem.dataset.checkName}"]`).forEach((duplicates) => {
-    duplicates.checked = !!elem.checked;
+  document.querySelectorAll(`[data-check-name="${checkName}"]`).forEach((dupe) => {
+    dupe.checked = elem.checked;
+    const dupeArea = dupe.dataset.areaName;
+    const dupeAreaTitle = document.getElementById(dupeArea + 'Title');
+    dupeAreaTitle.checked = Array.from(document.querySelectorAll(`[data-area-name="${dupeArea}"]`)).every(
+      (areaCheck) => areaCheck.checked
+    );
   });
+  const areaRelatedChecks = document.querySelectorAll(`[data-area-name="${areaName}"]`);
+  const allChecked = Array.from(areaRelatedChecks).every((areaCheck) => areaCheck.checked);
+  const areaTitleCheckbox = document.getElementById(areaName + 'Title');
+  areaTitleCheckbox.checked = allChecked;
 };
 
-const createCheckbox = (id, checkName) => {
+const createCheckbox = (id, checkName, areaName) => {
   const input = document.createElement('input');
   input.setAttribute('type', 'checkbox');
   input.dataset.checkName = checkName;
+  input.dataset.areaName = areaName;
   input.id = id;
-  if (localStorage.getItem(id)) {
+  if (localStorage.getItem(checkName)) {
     updateCheckedCount(1);
     input.checked = true;
   }
@@ -64,22 +76,15 @@ const createTitleCheckbox = (areaName, areaChecks) => {
   input.setAttribute('type', 'checkbox');
   input.id = areaName + 'Title';
   input.setAttribute('style', 'display: none;');
-  if (localStorage.getItem(areaName)) {
-    input.checked = true;
-  }
   input.onchange = () => {
-    if (input.checked) {
-      localStorage.setItem(areaName, 'true');
-    } else {
-      localStorage.removeItem(areaName);
-    }
+    const initialState = input.checked;
     for (const check of areaChecks) {
       const childCheckbox = document.getElementById(areaName + ' ' + check);
-      if (input.checked === childCheckbox.checked) {
-        return;
+      if (initialState === childCheckbox.checked) {
+        continue;
       }
-      childCheckbox.checked = input.checked;
-      onCheck(childCheckbox);
+      childCheckbox.checked = initialState;
+      onCheck(childCheckbox); // this will mutate input.checked, that's why we store the initial state of the title checkbox
     }
   };
   return input;
@@ -112,12 +117,14 @@ const createWothButton = (areaName) => {
   return wothButton;
 };
 
-const createAreaTitle = (areaName, areaChecks, emoji = null) => {
+const createAreaTitle = (areaName, areaChecks, allChecked, emoji = null) => {
   const areaTitle = document.createElement('h2');
   const label = document.createElement('label');
   label.setAttribute('for', areaName + 'Title');
   label.textContent = emoji ? `${emoji} ${areaName}` : areaName;
-  areaTitle.append(createTitleCheckbox(areaName, areaChecks), label, createWothButton(areaName));
+  const checkbox = createTitleCheckbox(areaName, areaChecks);
+  checkbox.checked = allChecked;
+  areaTitle.append(checkbox, label, createWothButton(areaName));
   return areaTitle;
 };
 
@@ -132,17 +139,21 @@ Promise.all([fetch('data/s3.json'), fetch('data/area-styles.json')])
     for (const areaName of Object.keys(fullChecklist)) {
       const areaChecks = fullChecklist[areaName];
       const list = document.createElement('ul');
+      let allChecked = true;
 
-      areaChecks.forEach((checkName) => {
+      for (checkName of areaChecks) {
         const id = areaName + ' ' + checkName;
         const line = document.createElement('li');
-        const checkbox = createCheckbox(id, checkName);
+        const checkbox = createCheckbox(id, checkName, areaName);
         const label = createLabel(id, checkName);
         line.append(checkbox, label);
         list.append(line);
-      });
+        if (!checkbox.checked) {
+          allChecked = false;
+        }
+      }
 
-      const areaTitle = createAreaTitle(areaName, areaChecks, styles[areaName]['emoji']);
+      const areaTitle = createAreaTitle(areaName, areaChecks, allChecked, styles[areaName]['emoji']);
 
       const card = document.createElement('div');
       card.id = areaName;
