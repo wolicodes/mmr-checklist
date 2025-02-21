@@ -73,14 +73,14 @@ const createTitleCheckbox = (areaName, areaChecks) => {
     } else {
       localStorage.removeItem(areaName);
     }
-    areaChecks.forEach((check) => {
+    for (const check of areaChecks) {
       const childCheckbox = document.getElementById(areaName + ' ' + check);
-      if (input.checked && childCheckbox.checked) {
+      if (input.checked === childCheckbox.checked) {
         return;
       }
       childCheckbox.checked = input.checked;
       onCheck(childCheckbox);
-    });
+    }
   };
   return input;
 };
@@ -126,12 +126,10 @@ Promise.all([fetch('data/s3.json'), fetch('data/area-styles.json')])
   .then((data) => {
     const fullChecklist = data[0];
     const styles = data[1];
-    console.log(Object.values(fullChecklist).flat());
-    console.log([...new Set(Object.values(fullChecklist).flat())]);
     totalChecks = [...new Set(Object.values(fullChecklist).flat())].length;
     document.getElementById('totalChecks').textContent = totalChecks.toString();
 
-    Object.keys(fullChecklist).forEach((areaName) => {
+    for (const areaName of Object.keys(fullChecklist)) {
       const areaChecks = fullChecklist[areaName];
       const list = document.createElement('ul');
 
@@ -155,6 +153,6 @@ Promise.all([fetch('data/s3.json'), fetch('data/area-styles.json')])
       card.append(areaTitle, list);
 
       document.getElementById('masonry').append(card);
-    });
+    }
   })
   .catch((err) => console.error(err));
